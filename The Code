@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+void One();
+void Two();
+
+int main(){
+    cout << "Intro: Welcome to the game...\nThe Blind Adventurer!\n(FYI This game was made in a day of learning Cpp/C++)\n\nIn this game you are a teeny tiny 16 by 16 pixel sprite blind adventurer.\nSomeone has captured you and threw you into a small labrinth expecting you to never see your way out.\nBut they thought wrong.\n\nRules: You only have 3 lives. If you lose them all, then you’re dead.\nMovement:\n1 = Walk Forwards\n2 = Shuffle Right\n3 = Walk Backwards\n4 = Shuffle left\nNow off you Go!!!\n\n";
+
+    int C;
+    int D;
+    int E;
+    int F;
+    int G;
+    int H;
+    int I;
+    int J;
+    int Rafts = 3;
+	int Key = 1;
+	int Lives = 3;
+    int Loss = 1;
+    int HP = 100;
+    int Magic = 155;
+	int Goal = 1;
+
+    if (Lives == 0){
+        cout << "Aww, bummer. You lost all of your lives.\n(But I think the game will continue because my C++ is so beginner.)";}
+    if (HP<=  0){
+        int CurrLives;}
+
+    One();
+        return 0;}
+
+void One(){
+    int A;
+    do{
+        cout << "Which way would you like to go?\n";
+        cin >> A;
+        if (A == 1){
+            cout << "You stepped forwards.\n\n";
+            Two();}
+        if (A == 2){
+            cout << "You shuffled to the Right, and bumped into a wall.\nMaybe you should take a step forward.\n\n";}
+        if (A == 3){
+            cout << "You walk back and bump into a wall.\nLooks like you must go forwards.\n\n";}
+        if (A == 4){
+            cout << "You shuffled to the left, and bumped into a wall.\nMaybe you should take a step forward.\n\n";}
+        if (A >= 5){
+            cout << "Not a valid action.\n\n";}}
+        while(A >= 2);}
+
+void Two(){
+    int B;
+    cout << "Which way would you like to go from here?\n";
+    cin >> B;
+    if (B == 1){
+        cout << "You stepped forwards.\n\n";}
+    if (B == 2){
+        cout << "You shuffled to the Right.\n\n";}
+    if (B == 3){
+        cout << "You walk backwards.\n\n";
+        One();}
+    if (B == 4){
+        cout << "You shuffled to the left.\n\n";}
+    if (B >= 5){
+        cout << "Not a valid action.\n\n";}}
